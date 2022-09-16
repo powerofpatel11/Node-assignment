@@ -1,0 +1,52 @@
+ Q1. What is Node.js? Where can you use it?
+-->Node. js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.
+   Node. js is primarily used for non-blocking, event-driven servers, due to its single-threaded nature. It's used for traditional web sites and back-end API services, but was designed with real-time, push-based architectures in mind.
+ 
+Q2. Explain callback in Node.js.
+--> Callback is an asynchronous equivalent for a function. A callback function is called at the completion of a given task. Node makes heavy use of callbacks. All the APIs of Node are written in such a way that they support callbacks.
+    For example, a function to read a file may start reading file and return the control to the execution environment immediately so that the next instruction can be executed. Once file I/O is complete, it will call the callback function while passing the callback function, the content of the file as a parameter. So there is no blocking or wait for File I/O. This makes Node.js highly scalable, as it can process a high number of requests without waiting for any function to return results.
+
+Q3. What are the advantages of using promises instead of callbacks?
+-->Here are the pros of using promises over callbacks:
+    1)Better defined and organized control flow of asynchronous logic.
+    2)Highly reduced coupling.
+    3)We have integrated error handling.
+    4)Enhanced readability.
+  Cons of using Promises over callbacks:
+  1)It kills the purpose of asynchronous non-blocking I/O.
+  2)Only one object can be returned.
+  3)We cannot return multiple arguments.
+
+Q4. What is NPM?
+-->npm, Inc. is a company founded in 2014, and was acquired by GitHub in 2020. npm is a critical part of the JavaScript community and helps support one of the largest developer ecosystems in the world.
+   npm is lots of things.
+ 1)npm is the package manager for Node.js. It was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code.
+ 2)The npm Registry is a public collection of packages of open-source code for Node.js, front-end web apps, mobile apps, robots, routers, and countless other needs of the JavaScript community.
+ 3)npm is the command line client that allows developers to install and publish those packages.
+
+
+Q5. What are the modules in Node.js? Explain
+-->Types of Modules:  In Nodejs, there is 3 type of modules namely
+    1)Core Modules
+    2)Local Modules 
+    3)Third-Party Modules
+
+ 1)Core Modules:  Node.js comes with dozens of built-in modules. These built-in modules are sometimes referred to as core modules. The module system is built around the require function. This function is used to load a module and get access to its contents. require is a global variable provided to all your Node.js scripts, so you can use it anywhere you like. require() function will return a JavaScript type depending on your module.
+                  Syntex for Importing Module: const module = require("Name_of_Module_to_be_imported");
+ 2)Local Modules: Putting all your code in a single file is not a good idea. As you add more code, you’ll want to stay organized and break your Node.js app into multiple scripts that all work together. For that purpose, we can create local modules in our application. 
+ 3) Third-party Modules:  Third-party modules can be installed from the NPM (Node Package Manager) available online. 
+                          Firstly we need to initialize the npm using the npm init command before npm can be used. It creates a package.json file in the root directory and it stores all the information about the third-party module that we have installed as a dependency. 
+                          Installing an NPM module: npm install "module_name"
+                          The above command will do the following:Firstly, It creates the node_modules directory which npm uses to store all the codes of the npm module you have installed. Secondly, npm add a module as a dependency by listing it in the dependencies property in the package.json file, and lastly, npm creates a package-lock.json file. This is used to store information about the modules you’ve installed which helps keep things fast and secure. 
+
+
+
+ Q6. Create TODO app using FS module with yargs (command line arguments).
+   -->https://github.com/powerofpatel11/MY-NODE-JS-FILE
+
+
+
+
+
+
+

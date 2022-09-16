@@ -1,0 +1,91 @@
+Q1 : What is the difference between Java & JavaScript?
+  
+       Java	                                                                                                              JavaScript
+This is OOP or Object-Oriented programming language	                                                      This is an object based scripting language
+A stand-alone language	                                                                                      Not stand-alone, incorporated into HTML program for operation
+Strongly typed language is used, and data type of variable is decided before declaring or using it            Language utilised is loosely typed, so that the user does not have to worry about the data type before the declaration
+Code has to be compiled                                                                                       The code is all text
+Slightly more complex	                                                                                      Easier in comparison
+Used to perform complex tasks	                                                                              Complex tasks cannot be executed
+Large amount of memory is required	                                                                      Memory consumption is lesser
+Programs are saved with “.java” extension	                                                              Programs are saved with JavaScript, “.js” extension
+Stored in the / client host machine under the “Byte” code	                                              Stored in host or client machine as “source” code
+Compiled on the server before it is executed on the client side 	                                      JavaScript is interpreted on the client side
+Is static and the code once written can be run on any computing platform	                              Dynamic and is a cross-platform language
+
+
+Q2. What is JavaScript?
+  JavaScript is a popular programming language that is used to provide dynamic interactivity to websites. Today, JavaScript is one of the most in-demand skills worldwide, creating huge job opportunities for freshers as well as experienced professionals.
+  JavaScript is a popular web scripting language and is used for client-side and server-side development. 
+
+Q3. What are the data types supported by JavaScript?
+    JavaScript includes primitive and non-primitive data types. 
+    The primitive data types in JavaScript include 
+    string, 
+    number, 
+    boolean, 
+    undefined,  
+    null, and 
+    symbol.
+    The non-primitive data type includes the object.  
+
+
+Q4. What are the scopes of a variable in JavaScript?
+  JavaScript has 3 types of scope:
+  1)Block scope,
+  -->Variables declared within a JavaScript function, become LOCAL to the function.
+  2)Function scope,
+    -->Variables declared with var, let and const are quite similar when declared inside a function.
+  3)Global scope,
+  -->A variable declared outside a function, becomes GLOBAL.
+
+Q5. What is Callback?
+--> a callback is easier to create. That is, we simply have to pass the callback function as a parameter to another function and call it right after the completion of the task. Callbacks are mainly used to handle the asynchronous operations such as the registering event listeners, fetching or inserting some data into/from the file,
+
+Q6. What is Closure? Give an example.
+ -->A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+  function ABC() {
+  var name = 'vaibhav'; 
+  function displayName() {
+    // displayName() is the inner function, a closure
+    console.log(name);
+  }
+  displayName();
+  }
+  ABC();
+
+Q7. What is the difference between the operators ‘==‘ & ‘===‘?
+ --> Both are comparison operators. The difference between both the operators is that, “==” is used to compare values whereas, “ === “ is used to compare both value and types.
+    For example:
+    var x = 2;
+    var y = "2";
+   (x == y)  // Returns true since the value of both x and y is the same
+   (x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+    Previous
+
+Q8. What is the difference between null & undefined?
+   “null” is an assignment value that means “no value”.
+   “undefined” and “null” both are primitives.
+   “undefined” is of type undefined.
+   “null” is of type object.
+   JavaScript never set a value to “null”, it is used by programmers to indicate that a “var” has no value
+
+Q9. What would be the result of 2+5+”3″?
+ -->73
+    Because compiler firstly treat 2+5 as an integer or a addition symbol
+    then "3" is treated as string and + is treated as concatination  symbol.
+    That's  why the answer is 73.
+
+
+Q10. What is the difference between Call & Apply?
+   call() Method	                                                                           apply() Method
+1.It is used to write such a method that can be used on different objects.	         It is used to write methods, which can be used on different objects
+2.It is a Predefined Method in Javascript.	                                         Its return value is the result of the calling function along provided this value and arguments.
+3.It is used for an object to use a method that belongs to a different object.	         We can use a list with this function instead of the array
+4.This method can also accepts parameters.	                                         This method takes parameter as an array
+5.Syntax -:object.objectMethod.call( objectInstance, arguments )                                 Syntax -:object.objectMethod.apply(objectInstance, arrayOfArguments)
+
+
+
+
+
